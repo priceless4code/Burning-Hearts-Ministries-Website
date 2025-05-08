@@ -68,3 +68,28 @@ document.addEventListener("DOMContentLoaded", () => {
     once: true,
   });
 });
+
+// Scroll to Top on Click
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollBtn = document.getElementById("scrollToTop");
+    
+    // Scroll to top action
+    scrollBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  
+    // Show/hide on scroll
+    window.addEventListener("scroll", function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+  });
+  
+
+// Scroll to Top on Click
+document.getElementById("scrollToTop").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
