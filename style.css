@@ -555,7 +555,7 @@ header:hover {
 /* Call to Prayer Section */
 .call-prayer {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('./images/prayer.jpg') no-repeat center/cover;
+              url('./images/prayer.JPG') no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 100px 5%;
