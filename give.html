@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Give | Burning Hearts Ministries</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="give.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Scripts -->
+  <script defer src="give.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="./images/logo.jpeg" alt="Burning Hearts Logo" />
+      <h2 class="bhm">Burning Hearts Ministries</h2>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="./index.html#home"><i data-feather="home"></i> Home</a>
+      <a href="#about"><i data-feather="info"></i> About</a>
+      <a href="./index.html#live-sermon"><i data-feather="video"></i> Sermons</a>
+      <a href="#events"><i data-feather="calendar"></i> Events</a>
+      <a href="./index.html#call-to-prayer"><i data-feather="heart"></i> Prayer</a>
+      <a href="#give" class="give-button"><i data-feather="gift"></i> Give</a>
+      <a href="#contact"><i data-feather="mail"></i> Contact</a>
+    </nav>
+
+    <button class="hamburger" onclick="toggleMenu()" title="Toggle Menu">
+      <i data-feather="menu"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" onclick="toggleMenu()" title="Close Menu">
+      <i data-feather="x"></i>
+    </button>
+    <a href="./index.html" onclick="toggleMenu()"><i data-feather="home"></i> Home</a>
+    <a href="#about" onclick="toggleMenu()"><i data-feather="info"></i> About</a>
+    <a href="./index.html#live-sermon" onclick="toggleMenu()"><i data-feather="video"></i> Sermons</a>
+    <a href="#events" onclick="toggleMenu()"><i data-feather="calendar"></i> Events</a>
+    <a href="./index.html#call-to-prayer" onclick="toggleMenu()"><i data-feather="heart"></i> Prayer</a>
+    <a href="#contact" onclick="toggleMenu()"><i data-feather="mail"></i> Contact</a>
+    <a href="#give" onclick="toggleMenu()"><i data-feather="gift"></i> Give</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="give-hero">
+    <h1>Support the Mission</h1>
+    <p>Your giving helps us reach more souls and transform lives.</p>
+  </section>
+
+  <!-- Giving Options -->
+  <section class="give-options">
+    <div class="card bank-transfer">
+      <h3>Bank Transfer (Naira)</h3>
+      <p><strong>Account Name:</strong> Burning Hearts Int'l Ministries</p>
+      <p><strong>Account Number:</strong> 1711276913 <button class="copy-btn" data-copy="1711276913">Copy</button></p>
+      <p><strong>Bank:</strong> Access Bank</p>
+    </div>
+
+    <div class="card bank-transfer">
+      <h3>Bank Transfer (USD)</h3>
+      <p><strong>Beneficiary Bank:</strong> Access Bank PLC (36145842) <button class="copy-btn" data-copy="36145842">Copy</button></p>
+      <p><strong>SWIFT Code:</strong> ABNGNGLA</p>
+      <p><strong>Intermediary Bank:</strong> Citibank New York</p>
+      <p><strong>Routing No:</strong> 021000089 <button class="copy-btn" data-copy="021000089">Copy</button></p>
+      <p><strong>SWIFT:</strong> CITIUS33</p>
+    </div>
+
+    <div class="card online-giving">
+      <h3>Give Online</h3>
+      <button class="give-btn">Proceed to Payment</button>
+    </div>
+  </section>
+
+  <!-- Thank You Message -->
+  <section class="thank-you" id="thankYouMsg">
+    <h2>Thank you for partnering with God’s work!</h2>
+    <p>We pray for a multiplied harvest in your life.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+        <img src="./images/logo.jpeg" alt="Burning Hearts Logo" />
+        <h2 class="bhm">Burning Hearts Ministries</h2>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourpage" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/yourpage" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/yourpage" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://t.me/yourtelegram" target="_blank" rel="noopener" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Burning Hearts Ministries. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scrollToTop" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>
