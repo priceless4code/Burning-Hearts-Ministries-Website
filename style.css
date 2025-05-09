@@ -40,7 +40,6 @@ header {
   width: 100%;
   z-index: 999;
   display: flex;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
