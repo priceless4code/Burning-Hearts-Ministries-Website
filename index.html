@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Burning Hearts Ministries</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- Font Awesome CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,11 +21,11 @@
 
     <nav class="nav-links" id="navLinks">
       <a href="#home" data-section="home"><i data-feather="home" class="menu-icon"></i> Home</a>
-      <a href="#about" data-section="about"><i data-feather="info"></i> About</a>
-      <a href="#sermons" data-section="sermons"><i data-feather="video"></i> Sermons</a>
+      <a href="#bhm" data-section="about"><i data-feather="info"></i> About</a>
+      <a href="#live-sermon" data-section="sermons"><i data-feather="video"></i> Sermons</a>
       <a href="#events" data-section="events"><i data-feather="calendar"></i> Events</a>
-      <a href="#prayer" data-section="prayer"><i data-feather="heart"></i> Prayer</a>
-      <a href="#give" data-section="give" class="give-button"><i data-feather="gift"></i> Give</a>
+      <a href="#call-to-prayer" data-section="prayer"><i data-feather="heart"></i> Prayer</a>
+      <a href="./give.html" data-section="give" class="give-button"><i data-feather="gift"></i> Give</a>
       <a href="#contact" data-section="contact"><i data-feather="mail"></i> Contact</a>
     </nav>
 
@@ -39,10 +39,10 @@
       <i data-feather="x"></i>
     </button>
     <a href="#home" onclick="toggleMenu()"><i data-feather="home"></i> Home</a>
-    <a href="#about" onclick="toggleMenu()"><i data-feather="info"></i> About</a>
+    <a href="#bhm" onclick="toggleMenu()"><i data-feather="info"></i> About</a>
     <a href="#sermons" onclick="toggleMenu()"><i data-feather="video"></i> Sermons</a>
     <a href="#events" onclick="toggleMenu()"><i data-feather="calendar"></i> Events</a>
-    <a href="#prayer" onclick="toggleMenu()"><i data-feather="heart"></i> Prayer</a>
+    <a href="#call-to-prayer" onclick="toggleMenu()"><i data-feather="heart"></i> Prayer</a>
     <a href="#contact" onclick="toggleMenu()"><i data-feather="mail"></i> Contact</a>
     <a href="#give" onclick="toggleMenu()"><i data-feather="gift"></i> Give</a>
   </div>
@@ -57,7 +57,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="bhm" class="bhm-section">
+  <section id=  "bhm" class="bhm-section">
    
     <h2>About Burning Hearts Ministries</h2>
   
@@ -128,20 +128,35 @@
     </div>
   </div>
 </section>
-<!-- call to prayer section-->
+
+<!-- Call to Prayer Section -->
 <section id="call-to-prayer" class="section call-prayer" data-aos="fade-up">
   <div class="prayer-content">
     <h2>Call to Prayer</h2>
     <p>“If my people who are called by my name will humble themselves and pray...” <br>– 2 Chronicles 7:14</p>
 
     <div class="cta-buttons">
-      <a href="#prayer-form" class="btn-primary">Submit a Prayer Request</a>
+      <button id="openPrayerModal" class="btn-primary">Submit a Prayer Request</button>
       <a href="https://bit.ly/BHM-TELEGRAM" target="_blank" rel="noopener" class="btn-secondary">
-         Join Our Telegram Prayer Group
+        Join Our Telegram Prayer Group
       </a>
     </div>
   </div>
 </section>
+
+<!-- Prayer Request Modal -->
+<div id="prayerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closePrayerModal">&times;</span>
+    <h2>Submit a Prayer Request</h2>
+    <form id="prayerForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Prayer Request..." rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Send Prayer</button>
+    </form>
+  </div>
+</div>
 
 <!-- Testimonial section -->
 
@@ -209,7 +224,7 @@
 </footer>
 
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <button id="scrollToTop" title="Go to top">
