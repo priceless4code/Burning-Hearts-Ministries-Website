@@ -308,18 +308,7 @@ header:hover {
   font-weight: 500;
   margin: 0 auto 2rem;
   min-height: 1.5em;
-}
-
-.typewriter-cursor {
-  display: inline-block;
-  width: 2px;
-  height: 1em;
-  background-color: white;
-  margin-left: 2px;
-  animation: blink 0.75s step-end infinite;
-  vertical-align: text-bottom;
-}
-
+ }
 @keyframes blink {
   50% { opacity: 0; }
 }
