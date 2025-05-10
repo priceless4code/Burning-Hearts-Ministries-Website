@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -258,6 +259,11 @@ header:hover {
   overflow: hidden;
   padding-top: 88px;
   margin-top:88px;
+  width: 100vw;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  
 }
 
 .hero::before {
@@ -982,5 +988,15 @@ header:hover {
   
   .modal-content {
     padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    min-height: 350px; /* fallback for very short viewports */
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
   }
 }
