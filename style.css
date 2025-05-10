@@ -176,14 +176,14 @@ header:hover {
   flex-direction: column;
   gap: 20px;
   position: fixed;
-  top: 0;
+  top: 88px;
   right: -280px;
   width: 280px;
   height: 100%;
   background: var(--bg);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  padding: 80px 30px 30px;
+  padding: 65px 27px 30px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 998;
   box-shadow: -5px 0 25px var(--shadow);
