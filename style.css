@@ -256,7 +256,8 @@ header:hover {
   color: white;
   text-align: center;
   overflow: hidden;
-  padding-top: 80px; /* Adjust for fixed header */
+  padding-top: 88px;
+  margin-top:88px;
 }
 
 .hero::before {
